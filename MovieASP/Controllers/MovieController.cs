@@ -14,10 +14,13 @@ namespace MovieASP.Controllers
     {
         private IMovieRepository _movieRepo;
         private IPersonRepository _personRepo;
-        public MovieController(IMovieRepository mr, IPersonRepository pr)
+        private ICommentRepository _commentRepo;
+
+        public MovieController(IMovieRepository mr, IPersonRepository pr, ICommentRepository cr)
         {
             _movieRepo = mr;
             _personRepo = pr;
+            _commentRepo = cr;
         }
 
         public IActionResult Index()
@@ -28,7 +31,7 @@ namespace MovieASP.Controllers
         public IActionResult Detail(int Id)
         {
             Movie movieFromDb = _movieRepo.GetById(Id);
-            MovieDetail movieDetail = new MovieDetail(_movieRepo, _personRepo);
+            MovieDetail movieDetail = new MovieDetail(_movieRepo, _personRepo, _commentRepo);
             movieDetail.Id = movieFromDb.Id;
             movieDetail.Title = movieFromDb.Title;
             movieDetail.Synopsis = movieFromDb.Synopsis;
@@ -68,6 +71,28 @@ namespace MovieASP.Controllers
 
             _personRepo.SetRole(form.MovieId, form.PersonId, form.Role);
             return RedirectToAction("Index", "Movie");
+        }
+
+        public IActionResult OnGetPartial() =>
+            new PartialViewResult
+            {
+                ViewName = "_comment"
+            };
+
+        [AuthRequired]
+        [HttpPost]
+        public IActionResult AddComment(Comment c)
+        {
+            c.UserId = HttpContext.Session.GetUser().Id;
+            _commentRepo.Create(c);
+            return RedirectToAction("Detail", "Movie", new { id = c.MovieId });
+        }
+
+        public IActionResult DeleteComment(int Id)
+        {
+            _commentRepo.Delete(Id);
+            return RedirectToAction("Index", "Movie");
+
         }
     }
 }

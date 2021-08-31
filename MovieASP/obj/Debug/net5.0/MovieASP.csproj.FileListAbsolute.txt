@@ -136,4 +136,4 @@ C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\MovieASP\obj\Debug\net5.0
 C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\MovieASP\obj\Debug\net5.0\Razor\Views\Movie\AddActor.cshtml.g.cs
 C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\MovieASP\obj\Debug\net5.0\Razor\Views\Person\Index.cshtml.g.cs
 C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\MovieASP\obj\Debug\net5.0\Razor\Views\Person\Create.cshtml.g.cs
-C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\MovieASP\obj\Debug\net5.0\Razor\Views\Comment\AddComment.cshtml.g.cs
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\MovieASP\obj\Debug\net5.0\Razor\Views\Shared\_comment.cshtml.g.cs

@@ -73,6 +73,20 @@
         </tbody>
     </table>
 </div>
+<h3>Commentaires</h3>
+<div style="border: 1px solid black">
+    @foreach (var item in Model.Commentaires)
+    {
+        <p>Auteur : @item.UserId &&nbsp; 
+        @if(MovieASP.Tools.SessionHelper.User != null && MovieASP.Tools.SessionHelper.User.IsAdmin)
+                {
+                    <a class="btn btn-danger" asp-action="DeleteComment" asp-route-id="@item.Id">X</a>
+                }
+        </p>
+        <p>@item.Content</p>
+        <hr />
+    }
+</div>
 
 <div>
 
@@ -86,7 +100,7 @@
 
     @if (MovieASP.Tools.SessionHelper.User != null)
     {
-        <p><a asp-action="AddComment" asp-controller="Comment" asp-route-id="@Model.Id">Ajouter Commentaire</a></p>
+        @Html.Partial("/Views/Shared/_comment.cshtml", new Dal.Entities.Comment { MovieId = Model.Id});
     }
 
     <a asp-action="Index">Retour à la liste</a>

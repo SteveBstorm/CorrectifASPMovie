@@ -11,11 +11,13 @@ namespace MovieASP.Models
     {
         private IMovieRepository _movieRepo;
         private IPersonRepository _personRepo;
+        private ICommentRepository _commentRepo;
 
-        public MovieDetail(IMovieRepository mr, IPersonRepository pr)
+        public MovieDetail(IMovieRepository mr, IPersonRepository pr, ICommentRepository cr)
         {
             _movieRepo = mr;
             _personRepo = pr;
+            _commentRepo = cr;
         }
 
         public MovieDetail()
@@ -45,6 +47,14 @@ namespace MovieASP.Models
                 }) ;
             }
             set { Casting = value; }
+        }
+
+        public IEnumerable<Comment> Commentaires
+        {
+            get
+            {
+                return _commentRepo is null ? null : _commentRepo.GetByMovieId(Id);
+            }
         }
     }
 }
