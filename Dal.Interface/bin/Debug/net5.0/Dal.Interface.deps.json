@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Dal.Interface/1.0.0": {
+        "dependencies": {
+          "Dal.Entities": "1.0.0"
+        },
+        "runtime": {
+          "Dal.Interface.dll": {}
+        }
+      },
+      "Dal.Entities/1.0.0": {
+        "runtime": {
+          "Dal.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dal.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dal.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

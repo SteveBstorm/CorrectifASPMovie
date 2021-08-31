@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Dal.Entities.Movie>
+
+
+<h1>Liste des films</h1>
+@if (MovieASP.Tools.SessionHelper.User != null && MovieASP.Tools.SessionHelper.User.IsAdmin)
+{
+    <p>
+        <a asp-action="Create">Ajouter un film</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Synopsis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseYear)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Synopsis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReleaseYear)
+                </td>
+               
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id=item.Id  }) |*@
+                    @if (MovieASP.Tools.SessionHelper.User != null)
+                    {
+                        @Html.ActionLink("Details", "Detail", new { id = item.Id })
+                    }
+                        @*@Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>

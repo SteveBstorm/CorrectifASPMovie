@@ -1,0 +1,15 @@
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\bin\Debug\net5.0\Dal.Interface.deps.json
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\bin\Debug\net5.0\Dal.Interface.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\bin\Debug\net5.0\ref\Dal.Interface.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\bin\Debug\net5.0\Dal.Interface.pdb
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\bin\Debug\net5.0\Dal.Entities.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\bin\Debug\net5.0\Dal.Entities.pdb
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.csproj.AssemblyReference.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.AssemblyInfoInputs.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.AssemblyInfo.cs
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.csproj.CopyComplete
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\ref\Dal.Interface.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Interface\obj\Debug\net5.0\Dal.Interface.pdb

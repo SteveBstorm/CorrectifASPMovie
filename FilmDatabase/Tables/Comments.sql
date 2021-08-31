@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Comments]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Content] VARCHAR(250) NOT NULL,
+	[UserId] INT NOT NULL,
+	[MovieId] INT NOT NULL,
+	CONSTRAINT FK_User_Comment FOREIGN KEY (UserId) REFERENCES Users(Id),
+	CONSTRAINT FK_Movie_Comment FOREIGN KEY (MovieId) REFERENCES Movie(Id)
+)

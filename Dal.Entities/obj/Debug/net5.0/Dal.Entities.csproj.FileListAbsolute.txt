@@ -1,0 +1,12 @@
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\bin\Debug\net5.0\Dal.Entities.deps.json
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\bin\Debug\net5.0\Dal.Entities.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\bin\Debug\net5.0\ref\Dal.Entities.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\bin\Debug\net5.0\Dal.Entities.pdb
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.csproj.AssemblyReference.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.AssemblyInfoInputs.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.AssemblyInfo.cs
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\ref\Dal.Entities.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\Dal.Entities\obj\Debug\net5.0\Dal.Entities.pdb

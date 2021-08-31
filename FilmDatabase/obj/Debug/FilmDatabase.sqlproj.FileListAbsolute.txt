@@ -1,0 +1,10 @@
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\bin\Debug\FilmDatabase.dacpac
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\bin\Debug\FilmDatabase.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\bin\Debug\FilmDatabase.pdb
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\FilmDatabase.sqlproj.AssemblyReference.cache
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\Model.xml
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\refactor.xml
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\postdeploy.sql
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\predeploy.sql
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\FilmDatabase.dll
+C:\Users\Steve\source\Demo\NetAzure21\CorrectifFilmASP\FilmDatabase\obj\Debug\FilmDatabase.pdb

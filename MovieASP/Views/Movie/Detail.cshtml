@@ -1,0 +1,93 @@
+﻿@model MovieASP.Models.MovieDetail
+
+
+<div>
+    <h4>@Model.Title</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Synopsis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Synopsis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ReleaseYear)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ReleaseYear)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Realisator)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Realisator.LastName  @Model.Realisator.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Scenarist)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Scenarist.LastName  @Model.Scenarist.FirstName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>
+                   Nom
+                </th>
+                <th>
+                    Prénom
+                </th>
+                <th>
+                    Rôle
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Casting)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Role)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+
+</div>
+
+<div>
+    @if (MovieASP.Tools.SessionHelper.User != null && MovieASP.Tools.SessionHelper.User.IsAdmin)
+    {
+        <p><a asp-action="AddActor">Ajouter un Acteur</a></p>
+    }
+
+    @if (MovieASP.Tools.SessionHelper.User != null)
+    {
+        <p><a asp-action="AddComment" asp-controller="Comment" asp-route-id="@Model.Id">Ajouter Commentaire</a></p>
+    }
+
+    <a asp-action="Index">Retour à la liste</a>
+</div>
